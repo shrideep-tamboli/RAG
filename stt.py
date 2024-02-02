@@ -6,6 +6,10 @@ import os
 from llama_index import Document, VectorStoreIndex, SimpleDirectoryReader
 from llama_index.node_parser import SentenceSplitter
 
+# Access API keys using Streamlit secrets
+api_key1 = st.secrets["api_key1"]
+openai_api_key1 = st.secrets["openai_api_key1"]
+
 client = OpenAI(api_key=api_key1)
 OPENAI_API_KEY = openai_api_key1
 os.environ["OPENAI_API_KEY"] = openai_api_key1
