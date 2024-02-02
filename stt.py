@@ -1,3 +1,11 @@
+import subprocess
+
+# Install required packages
+subprocess.run(['pip', 'install', 'PyPDF2'])
+subprocess.run(['pip', 'install', 'docx'])
+subprocess.run(['pip', 'install', 'openai'])
+subprocess.run(['pip', 'install', 'llama-index'])
+
 import streamlit as st
 import PyPDF2
 import docx
