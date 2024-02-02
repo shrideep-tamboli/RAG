@@ -6,8 +6,8 @@ import os
 from llama_index import Document, VectorStoreIndex, SimpleDirectoryReader
 from llama_index.node_parser import SentenceSplitter
 
-client = OpenAI(api_key=api_key)
-OPENAI_API_KEY = OPENAI_API_KEY
+client = OpenAI(api_key="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")
+OPENAI_API_KEY = "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"
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 
