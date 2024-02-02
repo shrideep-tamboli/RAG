@@ -1,6 +1,5 @@
 import streamlit as st
 import PyPDF2
-import docx
 from openai import OpenAI
 import time
 import os
@@ -17,7 +16,7 @@ def initial_message():
 
 
 def load_files():
-    uploaded_files = st.file_uploader("Pick one or more files to test", type=["pdf", "txt", "docx"], accept_multiple_files=True)
+    uploaded_files = st.file_uploader("Pick one or more files to test", type=["pdf", "txt"], accept_multiple_files=True)
 
     if uploaded_files:
         st.success("Files uploaded successfully!")
